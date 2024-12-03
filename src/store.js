@@ -1,13 +1,9 @@
 // src/store.js
 import { configureStore, createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import words from './words.json';
-import insults from './insults.json';
-import praises from './praises.json';
-
 
 // Asynchronous thunk to load words from words.json
 export const loadTrialWord = createAsyncThunk('trialWord/loadTrialWord', async () => {
-  
+  let words = require('./words.json');
   let randomWordObject = words[Math.floor(Math.random() * words.length)];
   let oneOrTwo = Math.floor(2 * Math.random() + 1);
   if (oneOrTwo === 2) {
@@ -44,14 +40,17 @@ const trialWordSlice = createSlice({
   },
 });
 
-
+let insults = [];
+let praises = [];
 
 // Asynchronous thunks to load JSON data
 const loadInsults = () => async (dispatch) => {
+  insults = require('./insults.json');
   return insults;
 };
 
 const loadPraises = () => async (dispatch) => {
+  praises = require('./praises.json');
   return praises;
 };
 
