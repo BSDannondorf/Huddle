@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Huddle/static/css/main.2373b9af.css",
+    "main.js": "/Huddle/static/js/main.f95758f1.js",
+    "static/media/EarlyGameBoy.ttf": "/Huddle/static/media/EarlyGameBoy.d9d11b3df42d741aaf14.ttf",
+    "index.html": "/Huddle/index.html",
+    "main.2373b9af.css.map": "/Huddle/static/css/main.2373b9af.css.map",
+    "main.f95758f1.js.map": "/Huddle/static/js/main.f95758f1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2373b9af.css",
+    "static/js/main.f95758f1.js"
+  ]
+}
